@@ -1,0 +1,247 @@
+/* En este archivo escriban su CSS */
+
+
+
+/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:wght@400;700&family=Poppins:wght@500&display=swap');
+
+
+/* Fonts */
+ *{ 
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0%;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    
+}
+
+body {
+    list-style: none;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0%;
+}
+
+.head {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    background:#fbfbfb;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    display: flex;
+    margin-right: 50px;
+    color: inherit;
+    
+}
+.navbar a {
+    display: block;
+    padding: 60px 30px;
+    color:black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: inherit;
+    font-weight: 700;
+    padding-right: 30 px;
+    width: 200px;
+   
+}
+.navbar a:hover{
+    background: #e6e5e5;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#Inicio { 
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: auto;
+    scroll-behavior: smooth;
+
+}
+#contacto {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    scroll-behavior: smooth;
+
+}
+
+header{
+    display:flex;
+    height: 70px;
+}
+.logo-Eidos {
+    display: flex;
+    justify-content: flex-end;
+    height: 5px; 
+    border-style:none;
+    width: 100%;
+    margin: 5px;
+    max-width: 200px;
+    padding: 5px 5px;
+    color: #e6e5e5;
+    top: 0;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+
+}
+/* #imagen{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    object-fit: cover;
+    flex-direction: column;
+    margin-bottom: 10%;
+
+  
+   
+}
+  section.foto{ 
+    display: block;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    padding-top: 5%; 
+    margin-bottom: 10px 20px 10px 20px;
+ 
+
+}
+ */
+
+ .bordes-redondeados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-radius: 180px;
+    margin-top: 5%;
+    width: 20pc;
+  
+}
+
+
+h1{
+    text-align: center;
+    font-size: 36px; 
+    margin-top: 10%;
+    margin-bottom:0.5%;
+    padding:20px;
+
+
+}
+
+#detalle{
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: auto;
+    text-align: center;
+    line-height: 1.2;
+    font-size:18px;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+
+}
+main{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.2;
+    font-size:18px;
+    border-radius:10px;
+    background-color: rgba(175, 89,158, 0.3);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size:28px;
+    text-align: center;
+   
+}
+
+  
+ .button{
+    background-color: #af599e;
+    color: inherit;
+    color:#fbfbfb;
+    display: inline-block;
+    font-size: 20px;
+    padding:10px 10px;
+    margin: 20px 450px 20px 450px;
+    text-align: center;
+    width: 300px;
+    box-sizing: border-box;
+    border-radius: 15pc;
+
+    
+}
+    
+   
+    
+ section.content{
+    text-align: center;
+    list-style: none;
+    padding-top: 10%;
+    box-sizing: border-box;
+    
+ }  
+
+ .adicional{
+    justify-content: space-between;
+    display:flex;
+    padding: 10px;
+    box-sizing: border-box;
+
+ }
+
+ .icono{
+   
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 20px 20px;
+    width: 80px;
+    height: 80px;
+   
+
+   
+ }
+
+ #pie {
+    text-align:center;
+    font-size: 20px;
+    color:#fbfbfb;
+    background-color:#af599e;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    
+}
+/* hola, se que tiene  cosas de mejorar pero en realidad
+ modifique varias veces para lograr el objetivo al final ya lo deje asi porque
+no tenia mas tiempo pero se que son cosas que puedo corregir  */
