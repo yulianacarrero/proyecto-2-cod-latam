@@ -11,7 +11,6 @@
     font-family: 'Dancing Script', cursive;
     font-family: 'Lato', sans-serif;
     font-family: 'Poppins', sans-serif;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0%;
     scroll-behavior: smooth;
@@ -24,6 +23,7 @@ body {
     max-width: 1200px;
     margin: auto;
     padding: 0%;
+    font-size: 16p;
 }
 
 .head {
@@ -42,7 +42,7 @@ body {
 
 .navbar {
     display: flex;
-    margin-right: 50px;
+    margin-right: 3.125em;
     color: inherit;
     
 }
@@ -138,9 +138,10 @@ header{
     align-items: center;
     padding-top: 10px;
     padding-bottom: 5px;
-    border-radius: 180px;
+    border-radius: 11.25em;
     margin-top: 5%;
     width: 20pc;
+    object-fit: cover;
   
 }
 
@@ -150,7 +151,7 @@ h1{
     font-size: 36px; 
     margin-top: 10%;
     margin-bottom:0.5%;
-    padding:20px;
+    padding:1.25rem;
 
 
 }
@@ -194,10 +195,12 @@ h2 {
     font-size: 20px;
     padding:10px 10px;
     margin: 20px 450px 20px 450px;
-    text-align: center;
-    width: 300px;
+    
+    width: 18.75em;
     box-sizing: border-box;
     border-radius: 15pc;
+    height: 100%;
+    
 
     
 }
@@ -214,19 +217,19 @@ h2 {
 
  .adicional{
     justify-content: space-between;
-    display:flex;
+    display: inline-block;
     padding: 10px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 
  }
 
  .icono{
-   
+    
     justify-content: center;
     box-sizing: border-box;
-    margin: 20px 20px;
-    width: 80px;
-    height: 80px;
+    margin: 20px;
+    width: 60px;
+    height: 60px;
    
 
    
