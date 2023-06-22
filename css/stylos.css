@@ -181,13 +181,14 @@ h2 {
     color:#fbfbfb;
     display: inline-block;
     font-size: 20px;
-    padding:0.625em 0.625em;
-    margin: 10px 450px 20px 450px;
-    width: 0.5%
+    /* padding:0.625em 0.625em; */
+    /* margin: 10px 450px 20px 450px; */
+    /* width: 0.5%; */
     height: 100%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     border-radius: 15pc;
     justify-content: center;
+    padding: 10px 10px;
    
 }
     
@@ -303,6 +304,13 @@ h2 {
     main {
         font-size: 18px;
     }
+    .button {
+        font-size: 14px;
+    }
+    .navbar a{
+        max-width: 2px;
+        
+    }
  }
 
 /*  phones, mobile */
@@ -330,17 +338,16 @@ h2 {
     main {
         font-size: 14px;
     }
-    .header{
+    /* .header{
         width: 2px;
-    }
-    .button{
-        width: px;
-        padding:0.625em 0.625em;
-        margin: 10px 450px 20px 450px;
+    } */
+     .button{
+        font-size: 12px;
     
-    }
+    } 
     .navbar a{
-        width: 5em;    
+        max-width: 1px;
+        
     }
 
 }
