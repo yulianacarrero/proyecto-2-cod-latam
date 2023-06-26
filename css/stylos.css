@@ -232,9 +232,18 @@ h2 {
     font-family: 'Lato', sans-serif;
    
 }
-.change-font{
+
+
+
+/* input {
     background-color: aqua;
-    font-size: 30px;
+    font-size: 8px;
+} */
+.change-font {
+    background: hwb(355 33% 2%);
+    font-family:Georgia, 'Times New Roman', Times, serif
+
+   
 }
 /* haciendo la pagina responsive */
 
@@ -308,8 +317,11 @@ h2 {
         font-size: 14px;
     }
     .navbar a{
-        max-width: 2px;
+        max-width: 1px;
         
+    }
+    .logo-Eidos{
+        max-width: 1px;
     }
  }
 
@@ -347,8 +359,12 @@ h2 {
     } 
     .navbar a{
         max-width: 1px;
+        height: 1px;
         
     }
+    
+    
+
 
 }
 
