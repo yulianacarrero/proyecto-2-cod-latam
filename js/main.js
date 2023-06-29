@@ -17,7 +17,7 @@
 
 //como desaparecer un texto del html con solo un clic//
 
-document.getElementById('hider').onclick= function() {
+  document.getElementById('hider').onclick= function() {
   document.getElementById('text').hidden = true;
 }
 
@@ -28,4 +28,18 @@ changeFontBtn.addEventListener('click', function() {
   document.body.classList.toggle('change-font');
 });
 
-  //
+
+// const menuItems = document.querySelectorAll('.menu-item');
+// menuItems.forEach(function (el){
+//     el.addEventListener('click', function(e) {
+//         const currentItem = document.querySelector('.active');
+//         currentItem.classList.remove('active');
+//         e.target.classList.add('active');
+// });
+// });
+
+
+// let parrafo = document.querySelector('#ejemplo');
+/*parrafo.addEventListener('click', function(e) {
+ e.target.classList.toggle('parrafo-modificado');
+});*/

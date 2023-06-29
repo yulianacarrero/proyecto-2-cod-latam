@@ -34,40 +34,57 @@ body {
     display: flex;
     height: 5.625em;
     align-items: center;
-    justify-content: space-between;
     background:#fbfbfb;
     position: fixed;
-    width: 100%;
-    /* z-index: 100; */
-    margin: 0 auto;
+    z-index: 100; 
+    /* margin: 0 auto; */
     box-sizing: border-box;
-    padding: 2.5em;
-}
+    /* padding: 2.5em; */
+    box-shadow: 0 4px 5px; 
+    color: #e6e5e5;
+    left: 0;
+    top:0;
+    width: 100%;
+    
+    }
 
 
 .navbar {
     display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* display: flex;
     margin-right: 3.125em;
     color: inherit;
-    
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 10px;
+     */
 }
 .navbar a {
     display: block;
-    padding: 3.75em 1.875em;
+    padding: 0 15px;
+    /* padding: 3.75em 1.875em; */
     color:black;
     text-decoration: none;
+    justify-content: space-between;
     text-transform: capitalize;
     font-size: 1.25rem;
     /* color: inherit; */
     /* font-weight: 700 px; */
     padding-right: 1.875rem;
-    width: 12.5em;  
+    width: 12.5em; 
+    font-weight: 500;
+    
+    
+
     
 }
 .navbar a:hover{
   
     background: #af599e;
-    height: 2px;
+    height: 50px;
   
 
 }
@@ -86,7 +103,7 @@ a {
     scroll-behavior: smooth;
 
 }
-#contacto {
+#Contacto {
     display: flex;
     align-items: flex-end;
     flex-direction: row;
@@ -95,7 +112,25 @@ a {
     scroll-behavior: smooth;
 
 }
+#Habilidades {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    scroll-behavior: smooth;
 
+}
+ul {
+    justify-content: center;
+    font-size: large;
+    background:#fbfbfb;
+    color: #ec3bc9;
+    border-radius: 1.125em;
+    max-width:900px;
+    list-style: none;
+    
+}
 header{
     display:flex;
     height: 4.375em;
@@ -245,6 +280,9 @@ h2 {
 
    
 }
+
+
+
 /* haciendo la pagina responsive */
 
 /* desktop */
@@ -252,8 +290,6 @@ h2 {
     body{
         font-size: 14px;
         width: 90%;
-        
-      
     }
     .foto{
         display: flex;
@@ -277,13 +313,18 @@ h2 {
         padding-left: 5px;
         
     } 
+   
+  
+
+
+    
     #detalle{
        
         font-size: 20px;
         font-family: 'Dancing Script', cursive;
         line-height: 1.5;
         
-    }
+    } 
     #parrafo1{
         translate:inherit;
         padding-left: 31.25rem;
@@ -320,9 +361,20 @@ h2 {
         max-width: 1px;
         
     }
-    .logo-Eidos{
+    .logo-Eidos a{
         max-width: 1px;
     }
+    .navbar a {
+        font-size: 3px;
+        color:black;
+       
+        font-size: 1.25rem;
+       
+        width: 6.5em; 
+
+    }
+        
+        
  }
 
 /*  phones, mobile */
@@ -362,7 +414,7 @@ h2 {
         height: 1px;
         
     }
-    
+
     
 
 
