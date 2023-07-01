@@ -19,7 +19,7 @@
    
     
 }
-
+/* cuerpo de la pagina */
 body {
     list-style: none;
     max-width: 1200px;
@@ -28,7 +28,7 @@ body {
     font-size: 16px;
     
 }
-
+/* encabezado de la pagina */
 .head {
    
     display: flex;
@@ -48,22 +48,22 @@ body {
     
     }
 
-
-.navbar {
+.menu-item { 
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
+    max-width: 980px;
     /* display: flex;
     margin-right: 3.125em;
     color: inherit;
     margin: 0 auto;
-    max-width: 980px;
-    padding: 10px;
-     */
+   
+    /* padding: 10px;
+     */ 
 }
-.navbar a {
-    display: block;
+ .menu-item a { 
+    display: flex;
     padding: 0 15px;
     /* padding: 3.75em 1.875em; */
     color:black;
@@ -76,24 +76,29 @@ body {
     padding-right: 1.875rem;
     width: 12.5em; 
     font-weight: 500;
-    
-    
-
-    
+   
 }
-.navbar a:hover{
-  
+.menu-item a.active{
+    background: #af599e;
+    transition: background-color 0.3s;
+    height: 60px;
+   
+}
+
+/* .navbar a:hover{
     background: #af599e;
     height: 50px;
-  
+}  */
 
-}
 
 a {
     text-decoration: none;
 }
 
-
+header{
+    display:flex;
+    height: 4.375em;
+}
 #Inicio { 
     display: flex;
     align-items: center;
@@ -112,6 +117,7 @@ a {
     scroll-behavior: smooth;
 
 }
+
 #Habilidades {
     display: flex;
     align-items: flex-end;
@@ -121,7 +127,16 @@ a {
     scroll-behavior: smooth;
 
 }
-ul {
+#Conocimientos {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    scroll-behavior: smooth;
+
+}
+.habil {
     justify-content: center;
     font-size: large;
     background:#fbfbfb;
@@ -131,10 +146,7 @@ ul {
     list-style: none;
     
 }
-header{
-    display:flex;
-    height: 4.375em;
-}
+
 .logo-Eidos {
     display: flex;
     /* justify-content: flex-end; */
@@ -226,8 +238,29 @@ h2 {
     padding: 10px 10px;
    
 }
+.cono {
+    justify-content:center;
+    align-content: baseline;
+    font-size: large;
+    background:#fbfbfb;
+    padding-left: 300px;
+    padding-top: 20px;
     
+}
+    
+   
+   
+/* #parrafo2 {
 
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: auto;
+    text-align: center;
+    line-height: 1.2;
+    font-size:1.125em;
+  
+ } */
+/* donde se reflejan los contactos */
  section.content{
    
     text-align: center;
@@ -237,15 +270,17 @@ h2 {
     
  }  
 
- .adicional{
+ .adicional a{
     justify-content: space-between;
     display: inline-block;
     padding: 10px;
    
-
  }
-
- .icono{
+.adicional a:hover {
+    background: #af599e;
+    height: 70px;
+}
+  .icono {
     
     justify-content: center;
     box-sizing: border-box;
@@ -256,7 +291,7 @@ h2 {
 
    
  }
-
+ /* footer */
  #pie {
     text-align:center;
     font-size: 20px;
@@ -275,7 +310,7 @@ h2 {
     font-size: 8px;
 } */
 .change-font {
-    background: hwb(355 33% 2%);
+    background:#58d3db;
     font-family:Georgia, 'Times New Roman', Times, serif
 
    
