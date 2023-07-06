@@ -1,8 +1,4 @@
-/* En este archivo escriban su CSS */
 
-
-
-/* Importar aquí la font */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:wght@400;700&family=Poppins:wght@500&display=swap');
 
 
@@ -14,8 +10,6 @@
     margin: 0 auto;
     padding: 0%;
     
-    /* scroll-behavior: smooth; */
-    /* box-sizing: border-box; */
    
     
 }
@@ -28,8 +22,14 @@ body {
     font-size: 16px;
     
 }
+header{
+    display:flex;
+    height: 4.375em;
+
+  
+}
 /* encabezado de la pagina */
-.head {
+.heady {
    
     display: flex;
     height: 5.625em;
@@ -45,6 +45,7 @@ body {
     width: 100%;
     margin: 0 auto;
     
+    
     }
 
 .menu-item { 
@@ -53,57 +54,37 @@ body {
     margin: 0;
     padding: 0;
     max-width: 980px;
-    /* display: flex;
-    margin-right: 3.125em;
-    color: inherit;
-    margin: 0 auto;
-   
-    /* padding: 10px;
-     */ 
+  
 }
  .menu-item a { 
     display: flex;
-    padding: 0 15px;
-    /* padding: 3.75em 1.875em; */
+    font-size: 1.25em;
+    padding: 0 0.9375em;
     color:black;
     text-decoration: none;
     justify-content: space-between;
     text-transform: capitalize;
-    font-size: 1.25rem;
-    /* color: inherit; */
-    /* font-weight: 700 px; */
-    padding-right: 1.875rem;
+    padding-right: 1.875em;
     width: 12.5em; 
-    font-weight: 500;
-    line-height: 50px;
+    font-weight: 500%;
+    line-height: 3.125em;
+    
+    
    
 }
+/* transcion en javaScript */
 .menu-item a.active{
     background: #af599e;
     transition: background-color 0.3s;
     height: 60px;
-   
+ 
 }
-
-/* .open-menu, 
-.close-menu {
-    display: none;
-} */
-
-/* .navbar a:hover{
-    background: #af599e;
-    height: 50px;
-}  */
-
 
 a {
     text-decoration: none;
 }
 
-header{
-    display:flex;
-    height: 4.375em;
-}
+
 #Perfil { 
     display: flex;
     align-items: center;
@@ -141,27 +122,6 @@ header{
     scroll-behavior: smooth;
 
 }
-.habil {
-    justify-content: center;
-    font-size: large;
-    background:#fbfbfb;
-    color: #ec3bc9;
-    border-radius: 1.125em;
-    max-width:900px;
-    list-style: none;
-    
-}
-
-/* .logo-Eidos {
-    display: flex;
-    height: 5px; 
-    border-style:none;
-    width: 100%;
-    color: #e6e5e5;
-    margin-left: 3px; 
-    box-sizing: border-box;
-
-} */
 .logo{
     display: flex;
     align-items: center;
@@ -198,7 +158,7 @@ h1{
 
 }
 
-#detalle{
+ #detalle{
    
     max-width: 1200px;
     min-height: 100vh;
@@ -209,19 +169,39 @@ h1{
     padding-top: 5%;
     padding-bottom: 1.25em;
     box-sizing: border-box;
+   
 
+} 
+
+.button{
+    background-color: #af599e;
+    color: inherit;
+    color:#fbfbfb;
+    display: inline-block;
+    font-size: 20px; 
+    height: 100%;
+    border-radius: 15pc;
+    justify-content: center;
+    padding: 0.625em 0.625em;
+   
+   
 }
+/* hablemos */
 main{
    
     max-width: 900px;
-    /* margin: auto; */
     text-align: center;
     line-height: 1.2;
     font-size:18px;
     border-radius:10px;
-    background-color: rgba(175, 89,158, 0.3);
+   
+    background-color:  hsl(312, 61%, 83%);
     padding: 30px;
+    padding-top: 30px;
     box-sizing: border-box;
+    margin-top: 50px;
+    
+    margin-bottom: 50px;
 }
 
 h2 {
@@ -229,54 +209,83 @@ h2 {
     text-align: center;
    
 }
-
-
- .button{
-    background-color: #af599e;
-    color: inherit;
-    color:#fbfbfb;
-    display: inline-block;
-    font-size: 20px;
-    /* padding:0.625em 0.625em; */
-    /* margin: 10px 450px 20px 450px; */
-    /* width: 0.5%; */
-    height: 100%;
-    /* box-sizing: border-box; */
-    border-radius: 15pc;
-    justify-content: center;
-    padding: 10px 10px;
+/* section otra informacion  section id="otra-infor*/
+section.otra-infor{
    
+    max-height: 700px;
 }
-.cono {
-    justify-content:center;
-    align-content: baseline;
-    font-size: large;
-    background:#fbfbfb;
-    padding-left: 250px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    
-    
-}
-    
-   
-   
-/* #parrafo2 {
 
-    max-width: 1200px;
-    min-height: 100vh;
-    margin: auto;
-    text-align: center;
+#parrafo-2 {
+    text-align:justify;
     line-height: 1.2;
-    font-size:1.125em;
+    font-size: 18px;
+    margin: 0 auto;
+    max-width:900px;
+
+
+ } 
+.habil {
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    background:#fbfbfb;
+    color: #d413ae;
+    border-radius: 1.125em;
+    max-width:900px;
+    list-style: none;
+    align-content: center;
+    padding: 20px, 20px;
+}   
+
   
- } */
+      
+
+
+#parrafo-3{
+    margin-top: 30px;
+    max-width: 900px;
+    height: 200px;
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-top: 20px;
+
+   
+   
+
+}
+
+
+/* section estudios */
+
+#estudios{
+    
+    box-sizing: border-box;
+    background-color: hsl(312, 61%, 83%);
+    max-height: 400px;
+    max-width: 900px;
+    border-radius: 15px;
+   
+}
+.cono{
+
+    list-style: none;
+    font-size: 18px;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+}
+  
+
+
 /* donde se reflejan los contactos */
+
  section.content{
    
     text-align: center;
     list-style: none;
-    padding-top: 8%;
+    padding-top: 15%;
+    padding-bottom: 15%;
     box-sizing: border-box;
     
  }  
@@ -284,7 +293,7 @@ h2 {
  .adicional a{
     justify-content: space-between;
     display: inline-block;
-    padding: 10px;
+    padding: 20px;
    
  }
 .adicional a:hover {
@@ -315,29 +324,23 @@ h2 {
 }
 
 
-
-/* input {
-    background-color: aqua;
-    font-size: 8px;
-} */
 .change-font {
     background:#58d3db;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
 
-   
 }
 
 
 
 /* haciendo la pagina responsive */
-
-/* desktop */
+/*para  desktop */
 @media (min-width: 1024px )  {
     body{
         font-size: 14px;
         width: 90%;
     }
-    .foto{
+     .foto{
         display: flex;
         flex-direction:column;
         justify-content:flex-start;
@@ -349,8 +352,14 @@ h2 {
         width: 0.625em;
         object-fit: cover;
         float: left; 
-    } 
+    }  
     
+    .menu-item {
+        
+        max-width: 980px;
+    }
+        
+
     h1{
         
         margin: 5px 25px 5px 70px;
@@ -359,9 +368,6 @@ h2 {
         padding-left: 5px;
         
     } 
-   
-  
-
 
     
     #detalle{
@@ -386,103 +392,155 @@ h2 {
     } 
            
 }
-   /* table */
-
- @media (max-width: 768px )  {
-
-.head{
-    flex-direction: column;
-    align-items: center;
-    font-size: 5px;
+   
+ 
     
-}
-.head .menu-item{
-    flex-direction: column;
-    align-items: center;
-    font-size: 5px;
-    left: 0;
-    top: 0;
-    overflow-y:auto;
-}
+/*responsi table */
 
-    
+@media (max-width: 980px) {
+    body {
+        background-color: chartreuse;
+        top:60px;
+    }
+
+    .heady  {
+        padding: 0;
+        background-color: aqua;
+
+
+    }
+    .menu-item {
         
+        max-width: 600px;
+        padding: 0;
+        background-color: #d413ae;
+    }
+      
+   
+  
+   
     .bordes-redondeados{
     
-        width: 12pc;
+        width: 18pc;
  
     } 
     h1{
         font-size: 20px;
     }
     main {
-        font-size: 18px;
+        font-size: 16px;
     }
     .button {
-        font-size: 14px;
+        font-size: 12px;
     }
-    .navbar a{
-        max-width: 1px;
-        
-    }
-    .logo-Eidos a{
-        max-width: 1px;
-    }
-    .navbar a {
-        font-size: 3px;
-        color:black;
-       
-        font-size: 1.25rem;
-       
-        width: 6.5em; 
+   
 
-    }
-        
-        
- }
+
+}
+
 
 /*  phones, mobile */
 
 @media (max-width: 576px )  {
+
     body{
         font-size: 10px;
-        width: 50%;
+        background-color: chocolate;
+       
+    }
+    
+    .heady  {
+        padding: 0;
+        background-color: rgb(168, 182, 87);
+
 
     }
-        
+    .heady .menu-item {
+        padding: 0;
+     
 
-    .bordes-redondeados{
+    }
+   
+    .heady .menu-item  { 
+        line-height: 20px; 
+        position: fixed;
+        background-color: aqua;
+        flex-direction: column;
+        left: 0;
+        top: 0;
+      
+        align-items: center;
+        overflow-y: auto;
+        
     
-        width: 8pc;
- 
-    } 
+    }
+   
+    
+    .bordes-redondeados{
+       
+        max-width: 8pc;
+    
+    }
+  
     h1 {
-        font-size: 14px;
+        font-size: 10px;
 
     }
     h2 {
-        font-size: 14px;
+        font-size: 10px;
     }
     main {
-        font-size: 14px;
+        font-size: 10px;
+        margin: 0 3px;
+        
+    
     }
-    /* .header{
-        width: 2px;
-    } */
+   
      .button{
-        font-size: 12px;
+        font-size: 8px;
     
     } 
-    .navbar a{
-        max-width: 1px;
-        height: 1px;
+    #parrafo-3{
         
+        font-size: 10px;
+        justify-content: center;
+        margin-right:2px;
+        margin-left:2px;
+    
+    }
+    #parrafo-2{
+        font-size: 10px;
+       
+        margin-right:2px;
+        margin-left:2px;
+    
+        
+    
     }
 
-    
+    section.content{
+   
+        box-sizing:content-box
+    }
+    .habil {
+        
+        font-size: 10px;
 
+    } 
+    .cono{
 
+    font-size: 10px;
+   
 }
+
+   
+}
+  
+
+
+    
+ 
+
 
    
 
