@@ -25,6 +25,7 @@ body {
 header{
     display:flex;
     height: 4.375em;
+    max-width: 100%;
 
   
 }
@@ -53,7 +54,7 @@ header{
     list-style: none;
     margin: 0;
     padding: 0;
-    max-width: 980px;
+    max-width: 992px;
   
 }
  .menu-item a { 
@@ -68,7 +69,6 @@ header{
     width: 12.5em; 
     font-weight: 500%;
     line-height: 3.125em;
-    
     
    
 }
@@ -330,13 +330,23 @@ section.otra-infor{
     justify-content: center;
 
 }
+.nav-toggle{
+    color:#080808;
+    background: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
 
+    display:none;
+ } 
 
 
 /* haciendo la pagina responsive */
 /*para  desktop */
 @media (min-width: 1024px )  {
     body{
+
         font-size: 14px;
         width: 90%;
     }
@@ -355,7 +365,6 @@ section.otra-infor{
     }  
     
     .menu-item {
-        
         max-width: 980px;
     }
         
@@ -369,7 +378,6 @@ section.otra-infor{
         
     } 
 
-    
     #detalle{
        
         font-size: 20px;
@@ -397,8 +405,9 @@ section.otra-infor{
     
 /*responsi table */
 
-@media (max-width: 980px) {
+@media (max-width: 780px) {
     body {
+
         background-color: chartreuse;
         top:60px;
     }
@@ -409,7 +418,7 @@ section.otra-infor{
 
 
     }
-    .menu-item {
+   .menu-item {
         
         max-width: 600px;
         padding: 0;
@@ -444,78 +453,95 @@ section.otra-infor{
 @media (max-width: 576px )  {
 
     body{
-        font-size: 10px;
-        background-color: chocolate;
+       
+        padding-top: 150px;
+        background-color: rgb(241, 197, 234);
        
     }
     
     .heady  {
         padding: 0;
-        background-color: rgb(168, 182, 87);
+        background-color: rgb(236, 230, 236);
 
 
     }
-    .heady .menu-item {
+    /* .heady .menu-item {
         padding: 0;
      
 
-    }
+    } */
    
-    .heady .menu-item  { 
-        line-height: 20px; 
-        position: fixed;
-        background-color: aqua;
+    .heady .menu-item { 
         flex-direction: column;
-        left: 0;
-        top: 0;
-      
         align-items: center;
+        margin-right: 20px;
+        background-color: rgb(108, 10, 121);
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        /* height: calc(100% -60px); */
         overflow-y: auto;
-        
+/* 
+        left: 100%;
+        transition: left 0.3s; */
     
     }
    
     
     .bordes-redondeados{
-       
+        padding-top: 80px;
         max-width: 8pc;
-    
+        border-radius: 15pc;
+        
     }
-  
+    #detalle{
+       
+        font-size: 12px;
+        
+    } 
     h1 {
-        font-size: 10px;
+        font-size: 14px;
 
     }
     h2 {
-        font-size: 10px;
+        font-size: 14px;
     }
     main {
-        font-size: 10px;
-        margin: 0 3px;
+        font-size: 12px;
+     
         
     
     }
    
      .button{
-        font-size: 8px;
+        font-size: 10px;
     
     } 
+    #parrafo-1{
+        font-size: 12px;
+        margin-right:20px;
+        margin-left:20px; 
+
+    }
+    p{
+        font-size: 12px;
+        margin-right:20px;
+        margin-left:20px;
+     
+    }
     #parrafo-3{
-        
-        font-size: 10px;
-        justify-content: center;
-        margin-right:2px;
-        margin-left:2px;
-    
+        font-size: 12px;
+        margin-right:20px;
+        margin-left:20px; 
+      
     }
     #parrafo-2{
-        font-size: 10px;
+        font-size: 12px;
+        margin-right:20px;
+        margin-left:20px; 
        
-        margin-right:2px;
-        margin-left:2px;
-    
-        
-    
     }
 
     section.content{
@@ -524,15 +550,24 @@ section.otra-infor{
     }
     .habil {
         
-        font-size: 10px;
+        font-size: 12px;
+      
 
     } 
     .cono{
 
-    font-size: 10px;
-   
-}
+    font-size: 12px;
+   }
+ .nav-toggle{
+    
+    display:block;
+ }
 
+ 
+/* 
+ .menu-item_visible {
+    left: 0;
+ }  */ 
    
 }
   

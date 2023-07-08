@@ -38,6 +38,12 @@ changeFontBtn.addEventListener('click', function() {
   });
  });
 
+//   const navToggle = document.querySelector(".nav-toggle")
+//   const menuItem = Document.querySelector(".menu-item")
+
+//   navToggle.addEventListener("click", ()=> {
+//    menuItem.classList.toggle("menu-item_visible");
+//  });
 
 // const menuItems = document.querySelectorAll('');
 // menuItems.forEach(function (el){
