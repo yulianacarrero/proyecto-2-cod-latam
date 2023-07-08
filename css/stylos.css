@@ -337,12 +337,14 @@ section.otra-infor{
     padding: 0 20px;
     line-height: 60px;
     cursor: pointer;
+    border: none;
 
     display:none;
  } 
 
 
-/* haciendo la pagina responsive */
+
+
 /*para  desktop */
 @media (min-width: 1024px )  {
     body{
@@ -367,7 +369,10 @@ section.otra-infor{
     .menu-item {
         max-width: 980px;
     }
-        
+    /* .heady{
+        max-width: 100%;
+    }
+         */
 
     h1{
         
@@ -404,7 +409,7 @@ section.otra-infor{
  
     
 /*responsi table */
-
+ 
 @media (max-width: 780px) {
     body {
 
@@ -445,15 +450,19 @@ section.otra-infor{
    
 
 
-}
+} 
 
 
 /*  phones, mobile */
 
+
+    
+ /* haciendo la pagina responsive */
+
 @media (max-width: 576px )  {
 
     body{
-       
+        
         padding-top: 150px;
         background-color: rgb(241, 197, 234);
        
@@ -465,11 +474,7 @@ section.otra-infor{
 
 
     }
-    /* .heady .menu-item {
-        padding: 0;
-     
-
-    } */
+   
    
     .heady .menu-item { 
         flex-direction: column;
@@ -481,14 +486,20 @@ section.otra-infor{
         top: 60px;
         width: 100%;
         padding: 20px 0;
-        /* height: calc(100% -60px); */
         overflow-y: auto;
-/* 
+
+        
+    } 
+    .menu-item { 
+       
+        margin-right: 20px;
+        opacity: 0;
+       
+        height: calc(100% -60px);  
         left: 100%;
-        transition: left 0.3s; */
+        transition: left 0.3s;
     
     }
-   
     
     .bordes-redondeados{
         padding-top: 80px;
@@ -558,23 +569,21 @@ section.otra-infor{
 
     font-size: 12px;
    }
- .nav-toggle{
+    .nav-toggle{
     
     display:block;
- }
+    
+    }
 
  
-/* 
- .menu-item_visible {
+    .menu-item_visible {
     left: 0;
- }  */ 
+    opacity: 1;
+   
+    }   
    
 }
   
-
-
-    
- 
 
 
    
