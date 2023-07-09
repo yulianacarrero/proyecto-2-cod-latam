@@ -54,7 +54,7 @@ header{
     list-style: none;
     margin: 0;
     padding: 0;
-    max-width: 992px;
+   
   
 }
  .menu-item a { 
@@ -195,7 +195,7 @@ main{
     font-size:18px;
     border-radius:10px;
    
-    background-color:  hsl(312, 61%, 83%);
+    background-color:  hsl(311, 44%, 66%);
     padding: 30px;
     padding-top: 30px;
     box-sizing: border-box;
@@ -261,7 +261,7 @@ section.otra-infor{
 #estudios{
     
     box-sizing: border-box;
-    background-color: hsl(312, 61%, 83%);
+    background-color: hsl(311, 71%, 74%);
     max-height: 400px;
     max-width: 900px;
     border-radius: 15px;
@@ -325,9 +325,10 @@ section.otra-infor{
 
 
 .change-font {
-    background:#58d3db;
+    background:#596a6b;
     font-family:Georgia, 'Times New Roman', Times, serif;
     justify-content: center;
+    color: #e6e5e5;
 
 }
 .nav-toggle{
@@ -343,10 +344,10 @@ section.otra-infor{
  } 
 
 
-
+ /* haciendo la pagina responsive */
 
 /*para  desktop */
-@media (min-width: 1024px )  {
+  @media (min-width: 1024px )  {
     body{
 
         font-size: 14px;
@@ -368,14 +369,11 @@ section.otra-infor{
     
     .menu-item {
         max-width: 980px;
+        align-content: center;
     }
-    /* .heady{
-        max-width: 100%;
-    }
-         */
+  
 
     h1{
-        
         margin: 5px 25px 5px 70px;
         font-size: 28px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -384,7 +382,6 @@ section.otra-infor{
     } 
 
     #detalle{
-       
         font-size: 20px;
         font-family: 'Dancing Script', cursive;
         line-height: 1.5;
@@ -408,31 +405,70 @@ section.otra-infor{
    
  
     
-/*responsi table */
+/* responsi table */ 
  
-@media (max-width: 780px) {
+@media (max-width: 980px) {
     body {
 
-        background-color: chartreuse;
+        background-color: rgb(240, 156, 177);
         top:60px;
     }
 
     .heady  {
         padding: 0;
-        background-color: aqua;
+        background-color: rgb(87, 86, 85);
+        
+    
 
 
     }
    .menu-item {
         
         max-width: 600px;
+        align-content: center;
         padding: 0;
-        background-color: #d413ae;
+        background-color: #1d1c1b;
+        color:#e6e5e5
     }
       
-   
-  
-   
+    .heady .menu-item { 
+        flex-direction: column;
+        align-items: end;
+        margin-right:20px;
+        background-color: rgb(233, 47, 78);
+       
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        overflow-y: auto;
+
+        
+    } 
+    .menu-item { 
+       
+        right: 10px;
+        opacity: 0;
+        max-width: 70%;
+        height: calc(100% -60px);  
+        left: 100%;
+        transition: left 0.3s;
+    
+    }
+    .nav-toggle{
+    
+        display:block;
+        
+        }
+    
+     
+        .menu-item_visible {
+        left: 0;
+        opacity: 1;
+       
+        }   
+       
     .bordes-redondeados{
     
         width: 18pc;
@@ -447,17 +483,40 @@ section.otra-infor{
     .button {
         font-size: 12px;
     }
-   
+    #parrafo-1{
+        font-size: 16px;
+        margin-right:20px;
+        margin-left:20px; 
+
+    }
+    p{
+        font-size: 16px;
+        margin-right:20px;
+        margin-left:20px;
+     
+    }
+    #parrafo-3{
+        font-size: 16px;
+        margin-right:20px;
+        margin-left:20px; 
+      
+    }
+    #parrafo-2{
+        font-size: 16px;
+        margin-right:20px;
+        margin-left:20px; 
+       
+    }
 
 
-} 
+}  
 
 
 /*  phones, mobile */
 
 
     
- /* haciendo la pagina responsive */
+
 
 @media (max-width: 576px )  {
 
@@ -466,6 +525,12 @@ section.otra-infor{
         padding-top: 150px;
         background-color: rgb(241, 197, 234);
        
+    }
+    header{
+        
+        height: 60px;
+       
+      
     }
     
     .heady  {
@@ -481,12 +546,14 @@ section.otra-infor{
         align-items: center;
         margin-right: 20px;
         background-color: rgb(108, 10, 121);
+        color: #e6e5e5;
         position: fixed;
         left: 0;
         top: 60px;
         width: 100%;
         padding: 20px 0;
         overflow-y: auto;
+        right:0;
 
         
     } 
@@ -521,9 +588,7 @@ section.otra-infor{
     }
     main {
         font-size: 12px;
-     
-        
-    
+      
     }
    
      .button{
