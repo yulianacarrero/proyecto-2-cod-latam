@@ -455,17 +455,20 @@ section.otra-infor{
         left: 100%;
         transition: left 0.3s;
         max-width:30%;
-        height:15%;
+        height: 20%;
     
     }
     .menu-item a{
         color: #0e0d0d;
-        font-size: 12px;
-        padding-top:1px;
+        font-size: 14px;
+       
+       
+    
     }
     .nav-toggle{
     
         display:block;
+    
         
     }
     
@@ -548,8 +551,7 @@ section.otra-infor{
 
     }
    
-  
-   
+
     .heady .menu-item { 
         flex-direction: column;
         align-items: center;
@@ -579,7 +581,7 @@ section.otra-infor{
     .menu-item a{
         color: #e6e5e5;
         font-size: 12px;
-        padding-top:1px;
+        margin-top: 2 px;
     }
     .bordes-redondeados{
        
