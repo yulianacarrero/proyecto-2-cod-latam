@@ -1,4 +1,4 @@
-//cambiando el html a traves del DOM //
+//cambiando el html a traves del DOM,  se logra hacer los cambios  //
 
 // //seleccionar el h1 y cambiar el texto //
 

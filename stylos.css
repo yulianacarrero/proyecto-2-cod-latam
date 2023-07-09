@@ -158,6 +158,7 @@ h1{
 
 }
 
+
  #detalle{
    
     max-width: 1200px;
@@ -348,7 +349,7 @@ section.otra-infor{
 
 
 /*para  desktop */
-   @media (min-width: 1024px )  {
+   @media (min-width: 980px )  {
     body{
         padding-top: 70px;
         font-size: 14px;
@@ -371,6 +372,7 @@ section.otra-infor{
     .menu-item {
         max-width: 980px;
         align-content: center;
+        width: auto;
     }
   
 
@@ -407,9 +409,9 @@ section.otra-infor{
     
 /* responsi table */ 
  
-@media (max-width: 980px) {
+@media (max-width: 979px) {
     body {
-
+        padding-top: 70px;
         background-color: rgb(240, 156, 177);
         top:70px;
     }
@@ -418,38 +420,31 @@ section.otra-infor{
         padding: 0;
         background-color: rgb(87, 86, 85);
         height: 60px;
-        
-    
-
-
+       
     }
+
    .menu-item {
         
         max-width: 600px;
-
         align-content: center;
         padding: 0;
         background-color: #1d1c1b;
-        color:#e6e5e5
+      
     }
       
     .heady .menu-item { 
         flex-direction: column;
-        align-items:baseline;
+        align-items:self-end;
         padding:0;
         margin-right:20px;
-        background-color: rgb(233, 47, 78);
-       
+        background-color: rgba(224, 72, 117, 0.801);
         position: fixed;
-        
-       
         right: 10px;
         top: 60px;
         width: 100%;
         padding: 20px 0;
         overflow-y: auto;
-
-        
+  
     } 
     .menu-item { 
        
@@ -459,53 +454,64 @@ section.otra-infor{
         height: calc(100% -60px);  
         left: 100%;
         transition: left 0.3s;
+        max-width:30%;
+        height:15%;
     
+    }
+    .menu-item a{
+        color: #0e0d0d;
+        font-size: 12px;
+        padding-top:1px;
     }
     .nav-toggle{
     
         display:block;
         
-        }
+    }
     
-     
-        .menu-item_visible {
+    .menu-item_visible {
         left: 0;
         opacity: 1;
        
-        }   
+    }   
        
     .bordes-redondeados{
     
         width: 18pc;
- 
     } 
+
     h1{
         font-size: 20px;
     }
+
     main {
         font-size: 16px;
     }
+
     .button {
         font-size: 12px;
     }
+
     #parrafo-1{
         font-size: 16px;
         margin-right:20px;
         margin-left:20px; 
-
     }
+
     p{
         font-size: 16px;
         margin-right:20px;
         margin-left:20px;
      
     }
+
     #parrafo-3{
         font-size: 16px;
         margin-right:20px;
         margin-left:20px; 
       
     }
+
     #parrafo-2{
         font-size: 16px;
         margin-right:20px;
@@ -518,10 +524,6 @@ section.otra-infor{
 
 
 /*  phones, mobile */
-
-
-    
-
 
 @media (max-width: 576px )  {
 
@@ -553,8 +555,6 @@ section.otra-infor{
         align-items: center;
         margin-right: 20px;
         background-color: rgb(108, 10, 121);
-        color: #e6e5e5;
-      
         left: 0;
         top: 60px;
         width: 100%;
@@ -569,13 +569,18 @@ section.otra-infor{
        
         margin-right: 20px;
         opacity: 0;
-       
         height: calc(100% -60px);  
-        left: 100%;
+        left: 0;
         transition: left 0.3s;
-    
+        max-width:30%;
+        height:15%;
     }
     
+    .menu-item a{
+        color: #e6e5e5;
+        font-size: 12px;
+        padding-top:1px;
+    }
     .bordes-redondeados{
        
         max-width: 8pc;
@@ -645,6 +650,7 @@ section.otra-infor{
     .nav-toggle{
     
     display:block;
+    
     
     }
 
