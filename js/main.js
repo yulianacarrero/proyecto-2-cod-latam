@@ -21,14 +21,14 @@
   document.getElementById('text').hidden = true;
 }
 
-//boton que cambia estilos */
-/*boton que cambia estilos */
+//boton que cambia estilos /
+
 const changeFontBtn = document.querySelector('#change-font');
 changeFontBtn.addEventListener('click', function() {
   document.body.classList.toggle('change-font');
 });
 
-
+//funcion active//
   const menuItems = document.querySelectorAll('.menu-item');
   menuItems.forEach(function (el){
      el.addEventListener('click', function(e) {
@@ -38,6 +38,7 @@ changeFontBtn.addEventListener('click', function() {
   });
  });
 
+ //funcion menu en dispositivos moviles//
    const navToggle = document.querySelector(".nav-toggle")
    const menuItem = document.querySelector(".menu-item")
 
@@ -45,17 +46,3 @@ changeFontBtn.addEventListener('click', function() {
     menuItem.classList.toggle("menu-item_visible");
   });
 
-// const menuItems = document.querySelectorAll('');
-// menuItems.forEach(function (el){
-//     el.addEventListener('click', function(e) {
-//         const currentItem = document.querySelector('.active');
-//         currentItem.classList.remove('active');
-//         e.target.classList.add('active');
-// });
-// });
-
-
-// let parrafo = document.querySelector('#ejemplo');
-/*parrafo.addEventListener('click', function(e) {
- e.target.classList.toggle('parrafo-modificado');
-});*/

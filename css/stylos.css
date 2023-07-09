@@ -346,10 +346,11 @@ section.otra-infor{
 
  /* haciendo la pagina responsive */
 
-/*para  desktop */
-  @media (min-width: 1024px )  {
-    body{
 
+/*para  desktop */
+   @media (min-width: 1024px )  {
+    body{
+        padding-top: 70px;
         font-size: 14px;
         width: 90%;
     }
@@ -402,8 +403,7 @@ section.otra-infor{
     } 
            
 }
-   
- 
+    
     
 /* responsi table */ 
  
@@ -411,12 +411,13 @@ section.otra-infor{
     body {
 
         background-color: rgb(240, 156, 177);
-        top:60px;
+        top:70px;
     }
 
     .heady  {
         padding: 0;
         background-color: rgb(87, 86, 85);
+        height: 60px;
         
     
 
@@ -425,6 +426,7 @@ section.otra-infor{
    .menu-item {
         
         max-width: 600px;
+
         align-content: center;
         padding: 0;
         background-color: #1d1c1b;
@@ -433,12 +435,14 @@ section.otra-infor{
       
     .heady .menu-item { 
         flex-direction: column;
-        align-items: end;
+        align-items:baseline;
+        padding:0;
         margin-right:20px;
         background-color: rgb(233, 47, 78);
        
         position: fixed;
-        left: 0;
+       
+        right: 10px;
         top: 60px;
         width: 100%;
         padding: 20px 0;
@@ -448,7 +452,7 @@ section.otra-infor{
     } 
     .menu-item { 
        
-        right: 10px;
+      
         opacity: 0;
         max-width: 70%;
         height: calc(100% -60px);  
@@ -523,6 +527,7 @@ section.otra-infor{
     body{
         
         padding-top: 150px;
+      
         background-color: rgb(241, 197, 234);
        
     }
@@ -540,6 +545,7 @@ section.otra-infor{
 
     }
    
+  
    
     .heady .menu-item { 
         flex-direction: column;
@@ -547,13 +553,14 @@ section.otra-infor{
         margin-right: 20px;
         background-color: rgb(108, 10, 121);
         color: #e6e5e5;
-        position: fixed;
+      
         left: 0;
         top: 60px;
         width: 100%;
         padding: 20px 0;
         overflow-y: auto;
-        right:0;
+        right: 10px;;
+        overflow-y: auto;
 
         
     } 
@@ -569,7 +576,7 @@ section.otra-infor{
     }
     
     .bordes-redondeados{
-        padding-top: 80px;
+       
         max-width: 8pc;
         border-radius: 15pc;
         
