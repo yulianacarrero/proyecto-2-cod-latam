@@ -441,6 +441,7 @@ section.otra-infor{
         background-color: rgb(233, 47, 78);
        
         position: fixed;
+        
        
         right: 10px;
         top: 60px;
@@ -452,7 +453,7 @@ section.otra-infor{
     } 
     .menu-item { 
        
-      
+      right: 10px;
         opacity: 0;
         max-width: 70%;
         height: calc(100% -60px);  
