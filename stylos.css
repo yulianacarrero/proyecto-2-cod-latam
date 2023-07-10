@@ -532,7 +532,7 @@ section.otra-infor{
 
     body{
         
-        padding-top: 150px;
+        padding-top: 100px;
       
         background-color: rgb(241, 197, 234);
        
@@ -585,12 +585,13 @@ section.otra-infor{
     }
     .bordes-redondeados{
        
-        max-width: 8pc;
+        max-width: 10pc;
         border-radius: 15pc;
         
     }
     #detalle{
        
+      
         font-size: 12px;
         
     } 
